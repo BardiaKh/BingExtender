@@ -13,7 +13,7 @@ To use BingExtender, you will need to enable Developer Mode in Edge. Here's how:
 
 1. Open Edge and navigate to `edge://extensions/`.
 2. Toggle on the **Developer mode** switch in the top right corner.
-3. Click the **Load unpacked** button and select the folder containing the BingExtender files.
+3. Click the **Load unpacked** button and select the `bing-extender` directory.
 4. The extension will be installed, and you can find it in the Edge toolbar.
 
 ### Adding and Customizing Prompts

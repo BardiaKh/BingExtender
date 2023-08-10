@@ -1,0 +1,17 @@
+[
+        {
+            "title": "Scientific Writing Copilot",
+            "description": "Used for better writing in scientific papers.",
+            "prompt": "Rewrite this text as it was written by a native speaker:\n\n%% PASTE YOUR TEXT HERE %%"
+        },
+        {
+            "title": "Informal Writing Copilot",
+            "description": "Used for better writing personal communications.",
+            "prompt": "Suppose that this paragraph is written by a non-native English speaker:\n\n%% PASTE YOUR TEXT HERE %%\n\nHow would you paraphrase it to sound more natural?"
+        },
+        {
+            "title": "Programming Copilot",
+            "description": "Used for better programming.",
+            "prompt": "I have this code:\n\n%% PASTE YOUR CODE HERE %%\n\nBut when I run it I get this error:\n\n%% PASTE YOUR ERROR HERE %%\n\nHow do I fix it?"
+        }
+]

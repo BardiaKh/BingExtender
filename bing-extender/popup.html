@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        * {
+            transition: all 0.2s ease-in-out;
+        }
+        body {
+            font-family: arial;
+            margin: 0;
+            width: 350px;
+            text-align: center;
+        }
+        #status-text {
+            padding: 32px 32px 12px 32px;
+            font-size: 18px;
+            margin: 0;
+        }
+        #run-script {
+            font-size: 16px;
+            padding: 4px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 8px auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        #run-script:hover {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+        }
+        body.bing-extended {
+            background-color: #AEE4CF;
+            color: #4A5C55;
+        }
+        body.bing-normal {
+            background-color: #AED9E4;
+            color: #4A565C;
+        }
+        body.bing-normal #run-script{
+            background-color: #4A565C;
+            color: #AED9E4;
+        }
+        body.non-bing{
+            background-color: #E6E6E6;
+            color: #4B4B4B;
+        }
+        body.non-bing #run-script, body.bing-extended #run-script{
+            display: none;
+        }
+        body.bing-normal #run-script{
+            display: block;
+        }
+        body.bing-normal #run-script:hover{
+            background-color: #4A565C;
+            color: #AED9E4;
+        }
+        #prompt-list {
+            display: none;
+        }
+        body.bing-extended #prompt-list {
+            display: block;
+            width: 100%;
+            margin: 0;
+        }
+        #prompt-list .item {
+            display: block;
+            background-color: transparent;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border-top: 1px solid #4A5C55;
+            border-bottom: 1px solid #4A5C55;
+            border-radius: 0px;
+            margin: 0;
+            cursor: pointer;
+        }
+        #prompt-list .item .title{
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+        }
+        #prompt-list .item .description{
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        #prompt-list .item:hover {
+            background-color: #4A5C55;
+            color: #AEE4CF;
+        }
+        .credit{
+            padding: 8px;
+            font-size:80%;
+            font-style:italic;
+        }
+        .credit a{
+            text-decoration:none;
+            color: #4a72b1;
+        }
+    </style>
+  </head>
+  <body>
+    <p id="status-text"></p>
+    <div id="prompt-list">
+        <div class="item">
+            <div class="title">
+                hi
+            </div>
+            <div class="description">
+                this is a description
+            </div>
+        </div>
+    </div>
+    <button id="run-script" ><i>extend</i></button>
+    <div class="credit">
+        v1.1 | by <a target='_blank' href='https://github.com/BardiaKh'>@BardiaKh</a>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

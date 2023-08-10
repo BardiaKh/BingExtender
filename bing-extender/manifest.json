@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Bing Extender",
+  "author": "bardiakhosravi95@gmail.com",
+  "icons": {
+    "512": "icon.png"
+  },
+  "version": "1.1",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "scripting"]
+}
